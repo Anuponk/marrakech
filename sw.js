@@ -1,0 +1,1 @@
+const name='marrakech-v1';self.addEventListener('install',e=>e.waitUntil(caches.open(name).then(c=>c.addAll(['/','/index.html','/app.js','/manifest.webmanifest']))));self.addEventListener('fetch',e=>{if(e.request.method==='GET'&&new URL(e.request.url).origin===location.origin)e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request)))});
