@@ -1,0 +1,8 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {},
+  "dependencies": {
+    "@vercel/blob": "^2.3.0"
+  }
+}
